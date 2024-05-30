@@ -1,0 +1,451 @@
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  z-index: 1;
+}
+
+/*Code for nav-bar styling*/
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  background-color: #ffffff;
+}
+
+ul {
+  display: flex;
+  gap: 50px;
+  font-size: large;
+  font-weight: 500;
+  padding: 10px;
+}
+li {
+  list-style: none;
+  font-weight: 200px;
+}
+
+li a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  background-color: #2752e7;
+  color: white;
+  padding: 20px;
+  font-size: large;
+}
+
+/*Code on styling hero section*/
+.hero-section {
+  background: linear-gradient(109.68deg, #2752e7 0%, #0b2271 87.47%);
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.intro {
+  width: 800px;
+  margin-top: 150px;
+}
+
+.converter {
+  width: 500px;
+  height: 600px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-top: 100px;
+  margin-bottom: 140px;
+  color: whitesmoke;
+}
+
+.bitcoin-img {
+  position: absolute;
+  margin-left: 20%;
+  z-index: -1;
+}
+
+.converter form {
+  margin: 40px 0 20px 0;
+}
+
+form select {
+  width: 20px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  margin-left: 10px;
+  background-color: darkgray;
+}
+
+form p {
+  font-size: 19px;
+  margin-bottom: 5px;
+}
+
+form input {
+  height: 50px;
+  font-size: 30px;
+  padding: 0 15px;
+  border-radius: 8px;
+  width: 400px;
+  margin-left: 35px;
+  border: none;
+  background-color: #888;
+}
+
+form input:focus {
+  padding: 0 14px;
+  border: 2px solid red;
+}
+
+form #drop-list {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+form #select-box {
+  display: flex;
+  width: 50px;
+  height: 30px;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+#select-box img {
+  max-width: 30px;
+}
+
+#select-box select::-webkit-scrollbar {
+  width: 10px;
+}
+
+#select-box select::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+#select-box select::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 8px;
+  border-right: 2px solid #ffffff;
+}
+
+.display-results {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+form button {
+  color: #fff;
+  cursor: pointer;
+  font-size: 17px;
+  transition: all 0.5s;
+  display: flex;
+  margin-left: 130px;
+  margin-top: 50px;
+}
+
+form button:hover {
+  background: #049bce;
+}
+
+.display-results {
+  text-align: center;
+  color: aqua;
+}
+
+/* statistics section */
+
+.currency-logo {
+  display: flex;
+  justify-content: space-around;
+}
+
+.currency-logo img {
+  margin-top: 50px;
+  width: 150px;
+  margin: auto;
+}
+
+.stats-info {
+  box-sizing: border-box;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
+
+  text-align: center;
+
+  margin-left: 350px;
+  width: 1200px;
+  height: 184px;
+
+  background: #ffffff;
+
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+}
+
+/*Benefits Section*/
+
+.benefits {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  gap: 400px;
+}
+
+.benefits-info {
+  width: 300px;
+  margin-left: 200px;
+  margin-top: 200px;
+}
+
+.benefits img {
+  width: 1000px;
+  height: 800px;
+}
+
+/*Products section*/
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(208, 219, 255, 1);
+}
+
+.img-prod {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 100px;
+}
+
+.products-deb {
+  text-align: center;
+}
+
+.products-deb h1 {
+  margin-bottom: 20px;
+}
+.products-deb p{
+  padding: 40px;
+}
+
+.prod-sign{
+  background: rgba(208, 219, 255, 1);
+  display: flex;
+  justify-content:center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.prod-design{
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  width: 300px;
+  height: 300px;
+}
+
+
+
+
+/*Her0-2 section*/
+.hero-2{
+  text-align: center;
+  background: rgba(39, 82, 231, 1);
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 8px;
+  padding: 50px;
+  color: white;
+  margin-bottom: 100px;
+}
+
+.hero-2 h1{
+  margin-bottom: 30px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.hero-2 button{
+  background-color: white;
+  color: black;
+  padding: 10px;
+  margin-right: 700px;
+}
+
+
+
+
+/*end-section*/
+.end-section{
+  display: flex;
+  justify-content: space-around;
+  background: rgba(39, 82, 231, 1);
+ 
+}
+
+
+
+/*Mobile view code*/
+@media screen and (min-width: 319px) and (max-width: 600px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .intro p {
+    text-align: center;
+  }
+  .intro {
+    width: 100%;
+  }
+
+  .intro input {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .intro button {
+    width: 92%;
+    margin-left: 20px;
+  }
+
+  .converter {
+    width: 90%;
+    margin-left: 20px;
+    text-align: center;
+    box-sizing: content-box;
+  }
+
+  .converter input {
+    width: 60%;
+    margin-right: 50px;
+  }
+
+  .converter img {
+    visibility: hidden;
+  }
+
+  .converter button {
+    margin-left: 80px;
+  }
+
+  .currency-logo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  .stats-info {
+    flex-direction: column;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 50px;
+    box-sizing: content-box;
+  }
+
+  .benefits {
+    flex-direction: column;
+    margin: auto;
+    gap: 0;
+  }
+  .benefits-info {
+    margin: auto;
+  }
+
+  .benefits img {
+    width: 100%;
+  }
+
+  .prod-sign{
+    flex-direction: column;
+  }
+
+  .img-prod{
+    
+  }
+
+  .hero-2{
+    margin: auto;
+  }
+  
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .intro p {
+    text-align: center;
+  }
+  .intro {
+    width: 100%;
+  }
+
+  .intro input {
+    margin-left: 100px;
+    margin-bottom: 10px;
+  }
+  .intro button {
+    margin-left: 40px;
+  }
+
+  .converter {
+    width: 90%;
+    margin-left: 50px;
+    text-align: center;
+    box-sizing: content-box;
+  }
+
+  .converter input {
+    width: 60%;
+    margin-right: 50px;
+  }
+
+  .converter img {
+    visibility: hidden;
+  }
+
+  .converter button {
+    margin-left: 35%;
+  }
+
+  .currency-logo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  .stats-info {
+    margin: auto;
+    width: 100%;
+  }
+
+  .benefits {
+    flex-direction: column;
+    margin: auto;
+    gap: 0;
+  }
+  .benefits-info {
+    width: 100%;
+    margin: auto;
+  }
+
+  .benefits img {
+    width: 100%;
+  }
+}

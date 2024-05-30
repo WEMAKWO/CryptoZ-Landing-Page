@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto Convertor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--Navbar section-->
+    <nav class="nav-bar">
+      <div class="nav-logos">
+        <a
+          href="#"
+          style="
+            text-decoration: none;
+            font-size: 30px;
+            color: black;
+            font-weight: bolder;
+          "
+          >Crypto<span style="color: blue">Z</span></a
+        >
+      </div>
+
+      <ul>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Price</a></li>
+        <li><a href="#">Learn</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+
+      <div>
+        <a
+          style="
+            padding: 25px;
+            text-decoration: none;
+            font-size: large;
+            color: black;
+            font-weight: 400;
+          "
+          href="#"
+          >Sign in</a
+        >
+        <button>Get Started</button>
+      </div>
+    </nav>
+
+    <!--Hero Section-->
+    <section class="hero-section">
+      <div class="intro">
+        <p class="top" style="color: rgba(255, 255, 255, 1); font-size: 50px">
+          Y our all-in-one platform to buy, sell, trade, and earn
+          Cryptocurrencies
+        </p>
+        <br />
+        <p style="color: white">
+          Open a free account in minutes right from your phone and amke your
+          money go further
+        </p>
+        <br />
+        <div>
+          <input
+            style="
+              padding: 20px;
+              width: 350px;
+              border-radius: 10px;
+              border: none;
+            "
+            placeholder="Email Adress...."
+          />
+          <button>Get Started</button>
+        </div>
+      </div>
+
+      <div class="converter">
+        <img
+          class="bitcoin-img"
+          src="assets/Coin/BitCoin/Cam2.png"
+          alt="bitcoin image"
+        />
+        <p style="font-size: 30px; text-align: center; margin-top: 25px">
+          Currency Converter
+        </p>
+        <form action="#">
+          <div id="drop-list">
+            <div id="currency">
+              <p>Currency</p>
+              <label id="mainCurrencyName"></label>
+              <div id="select-box">
+                <select id="money" onchange="displayCurrencyName()">
+                  <option value="EUR">Euro</option>
+                  <option value="USD">America Dollar</option>
+                  <option value="CAD">Canadian Dollar</option>
+                  <option value="GBP">British Pound</option>
+                  <option value="ZAR">South African Rand</option>
+                  <option value="CHF">Swiss Franc</option>
+                  <option value="AUD">Australian Dollar</option>
+                  <option value="SGD">Singapore Dollar</option>
+                  <option value="NZD">New Zealand</option>
+                  <option value="INR">India Rupee</option>
+                  <option value="JPY">Japanese</option>
+                  <option value="GHS">Ghana Cedis</option>
+                  <option value="NGN">Nigeria Naira</option>
+                </select>
+              </div>
+            </div>
+            <div id="bitcoin">
+              <p>Bitcoin</p>
+              <label id="bitcoinName"></label>
+              <div id="select-box">
+                <select id="toCrypto" onchange="displayCryptoName()">
+                  <option value="BTC">Bitcoin (BTC)</option>
+                  <option value="ETH">Ethereum (ETH)</option>
+                  <option value="USDT">Tether (USDT)</option>
+                  <option value="BNB">Binance Coin (BNB)</option>
+                  <option value="USDC">USD Coin (USDC)</option>
+                  <option value="XRP">XRP (XRP)</option>
+                  <option value="BUSD">Binance USD (BUSD)</option>
+                  <option value="ADA">cardano (ADA)</option>
+                  <option value="DOGE">Dogecoin (DOGE)</option>
+                  <option value="MATIC">Polygon (MATIC)</option>
+                  <option value="SOL">Solana (SOL)</option>
+                  <option value="DOT">Polkadot (DOT)</option>
+                  <option value="SHIB">Shiba Inu (SHIB)</option>
+                  <option value="LTC">Litecoin (LTC)</option>
+                  <option value="TRX">Tron (TRX)</option>
+                  <option value="AVAX">Avalanche (AVAX)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <input type="text" value="0.00" id="amount-input" required />
+          <div class="display-results">Calculating Exchange Rate...</div>
+          <button id="convert">Calculate Exchange Rate</button>
+        </form>
+      </div>
+    </section>
+
+    <!--Statistics section-->
+    <div class="currency-container">
+      <div class="currency-logo">
+        <img src="assets/pngwing.com.PNG" alt="Binance logo" />
+        <img src="assets/Coinbase New 2021.PNG" alt="Coinbase logo" />
+        <img src="assets/Bitcoin.JPG" alt="bitcoin logo" />
+        <img src="assets/logo-tether-horizontal-512.PNG" alt="Tether logo" />
+        <img src="assets/pngwing.com (1).PNG" alt="bitmex logo" />
+      </div>
+
+      <div class="stats-info">
+        <div
+          style="
+            width: 500px;
+            border-right: 1px solid #e3e3e3;
+            height: 100px;
+            padding: 0px;
+          "
+        >
+          <div style="font-size: 30px">99K</div>
+          <div>People have joined</div>
+        </div>
+
+        <div style="width: 550px; height: 100px; padding: 0px">
+          <div style="font-size: 30px">50K</div>
+          <div>VVIP users have joined</div>
+        </div>
+
+        <div
+          style="
+            width: 500px;
+            padding: 0px;
+            height: 100px;
+            border-left: 1px solid #e3e3e3;
+          "
+        >
+          <div style="font-size: 30px">100+</div>
+          <div>Big companies have joined</div>
+        </div>
+      </div>
+    </div>
+
+    <!--Benefits-Section-->
+    <div class="benefits">
+      <div class="benefits-info">
+        <p style="font-size: 40px; font-weight: bolder">
+          The Most Trusted Cryptocurrency platfrom
+        </p>
+        <br />
+        <p style="font-weight: bolder">
+          <span style="color: rgba(208, 219, 255, 1)">01 </span> Sync between
+          platfroms
+        </p>
+        <br />
+        <p>
+          No matter if you're using the web interface or mobile app-your data is
+          always synced. Just one account for all our services.
+        </p>
+        <br />
+
+        <p style="font-weight: bolder">
+          <span style="color: rgba(208, 219, 255, 1)">02 </span> More focus,
+          less clutter
+        </p>
+        <br />
+        <p>No ads, just the crypto and content you love</p>
+        <br />
+
+        <p style="font-weight: bolder">
+          <span style="color: rgba(208, 219, 255, 1)">03 </span>Security by
+          default
+        </p>
+        <br />
+        <p>Enable privacy mode and app looking to protect your data</p>
+      </div>
+
+      <div><img src="assets/Frame 5400.png" alt="" /></div>
+    </div>
+
+    <!--Products-section-->
+    <div class="products">
+      <div class="img-prod">
+        <img
+          style="margin-left: 400px"
+          class="prod-2"
+          src="assets/Frame 8753.png"
+        />
+        <div>
+          <img src="assets/Frame 8755.png" />
+          <img src="assets/Frame 8756.png" />
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; background: rgba(208, 219, 255, 1)">
+      <h1>Get Started in Just Few Minutes</h1>
+      <p>
+        Has a variety of features that make it the best place to start trading
+      </p>
+    </div>
+    <div class="prod-sign">
+      <div class="prod-design">
+        <img src="assets/Frame 219.png" alt="" />
+        <h5>Sign Up</h5>
+        <p>
+          Buy Bitcoin or Ethereum the secretly store it in your wallet or send
+          it on easily to friends
+        </p>
+      </div>
+      <div class="prod-design">
+        <img src="assets/Frame 220.png" alt="" />
+        <h5>Fund</h5>
+        <p>
+          Choose your preferred payment method such as bank transfer or credit
+          credit to top up profile
+        </p>
+      </div>
+      <div class="prod-design">
+        <img src="assets/Frame 221.png" alt="" />
+        <h5>Buy Crypto</h5>
+        <p>
+          Sign up for free wallet on web, iOS or Andriod and follow our easy
+          processs to set up your profile
+        </p>
+      </div>
+    </div>
+
+    <!--Commnets Section-->
+    <div>
+      <div style="text-align: center; margin-top: 30px; margin-bottom: 30px">
+        <img src="assets/Group 5345.png" />
+      </div>
+    </div>
+
+    <!--Hero2 section-->
+    <div>
+      <div class="hero-2">
+        <h1>Take your first step into safe, secure crypto investing</h1>
+        <button>Get Started</button>
+      </div>
+    </div>
+
+    <!--Ending Section-->
+
+    <div class="end-section">
+      <div style="color: white">
+        <h4>Company</h4>
+        <br />
+        <p>About Us</p>
+        <br />
+        <p>Blog</p>
+        <br />
+        <p>Bing</p>
+        <br />
+        <p>Careers</p>
+        <br />
+        <p>Student</p>
+        <br />
+        <p>Security</p>
+        <br />
+        <p>Trsut and Safety</p>
+        <br />
+        <p>Videos</p>
+      </div>
+
+      <div style="color: white">
+        <h4>Learn</h4>
+        <br />
+        <p>What's Trending</p>
+        <br />
+        <p>Product News</p>
+        <br />
+        <p>Events</p>
+        <br />
+        <p>University</p>
+        <br />
+        <p>Research</p>
+        <br />
+        <p>Market Updates</p>
+      </div>
+
+      <div style="color: white">
+        <h4>Products</h4>
+        <br />
+        <p>Stock & Fund</p>
+        <br />
+        <p>Cash Card</p>
+        <br />
+        <p>Crypto</p>
+        <br />
+        <p>Options</p>
+        <br />
+        <p>Gold</p>
+        <br />
+        <p>Learn Snacks</p>
+      </div>
+
+      <div style="color: white">
+        <h4>Support</h4>
+        <br />
+        <p>Support</p>
+        <br />
+        <p>Contact Us</p>
+        <br />
+        <p>System Status</p>
+        <br />
+        <p>Areas of Availabilty</p>
+      </div>
+
+      <div style="color: white">
+        <h4>Resources</h4>
+        <br />
+        <p>Prices</p>
+        <br />
+        <p>Site Widgets</p>
+        <br />
+        <p>Tax</p>
+        <br />
+        <p>Support</p>
+      </div>
+    </div>
+
+    <div style="background: rgba(39, 82, 231, 1); text-align: center; color: white; ">
+      <hr>
+      <h2 style="margin-bottom: 20px;">Did you know you can do more with crypto while on the go</h2>
+      <img src="assets/CryptoZ.png">
+      <p style="margin-top: 20px;">&#169 Design By Amarachi Iwueza. All rights reserved.</p>
+    </div>
+    
+
+    <script src="index.js" charset="UTF-8"></script>
+  </body>
+</html>
